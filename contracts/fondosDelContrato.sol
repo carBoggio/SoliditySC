@@ -19,5 +19,9 @@ contract functions {
 
     }
 
+    function _addMod(uint x, uint y, uint k ) public pure returns (uint, uint) {
+        return (addmod(x, y, k), (x+y)%k );
+    }
 
+ 
 }

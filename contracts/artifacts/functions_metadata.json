@@ -46,6 +46,40 @@
 				"type": "fallback"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "y",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "k",
+						"type": "uint256"
+					}
+				],
+				"name": "_addMod",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"stateMutability": "payable",
 				"type": "receive"
 			}
@@ -78,11 +112,11 @@
 	},
 	"sources": {
 		"contracts/fondosDelContrato.sol": {
-			"keccak256": "0xd7234b0becdf98b02fb6997d80500c439e490894316fd7bb0e8d8bc8a9876729",
+			"keccak256": "0x08ecb7400431b124ab0b8758e372c010f3b1c7bd57f463f5b49868cb161c8ee9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6ebb4553b31ac9728d2392322df2d0f05cc216b880e325959ebfbcbd0ad753ed",
-				"dweb:/ipfs/QmZKJ9vA6SWvquzbMfgtf2gBmGU7aPKvQ3eVs2P9VhgB96"
+				"bzz-raw://f07906c5de05b20f791981e964a6ae4ceef1bd5e93776266e872731a52bffce8",
+				"dweb:/ipfs/Qmb1fwWAmQP9S3rUTiKZhAPRaFiQSisNwxECsMgBVDGAFT"
 			]
 		}
 	},
