@@ -78,7 +78,7 @@ function transfer(address to, uint256 amount) public virtual override returns (b
 
 
 function allowance(address owner, address spender) public view virtual override returns (uint256){
-    _allowances[owner][spender];
+    return _allowances[owner][spender];
 }
 // Le permitimos a nuesto amigo gastar tal cantidad
 function approve(address spender, uint amount) public virtual override returns (bool){
@@ -195,17 +195,6 @@ function _addToAccountBalance(address account, uint quantity) private {
     _balances[account] += quantity;
 }
 
-    function _approve(
-        address owner,
-        address spender,
-        uint256 amount
-    ) internal virtual {
-        _avoidZeroAddress(owner, "ERC20: approve from the zero address");
-        require(owner != address(0), );
-        require(spender != address(0), "ERC20: approve to the zero address");
-        _allowances[owner][spender] = amount;
-        emit Approval(owner, spender, amount);
-    }
 
 event Approval(address indexed owner, address indexed spender, uint256 value);
 
@@ -214,12 +203,12 @@ function _approve (
     address spender,
     uint256 amount
 ) internal virtual  {
-    _avoidCeroAddrecesInAprove(owner, spender);
+    _avoidZeroAddrecesInAprove(owner, spender);
     _allowances[owner][spender] += amount;
     emit Approval(owner, spender, amount);
 }
 
-function _avoidCeroAddrecesInAprove(address to, address from) private {
+function _avoidZeroAddrecesInAprove(address to, address from) private pure {
     _avoidZeroAddress(from,  "ERC20: aprove from the zero address");
     _avoidZeroAddress(to, "ERC20: aprove to the zero address");
 }
@@ -237,7 +226,7 @@ function _spendAllowance(address owner, address spender,uint amount) internal vi
 
 }
 
-function _checkHaveEnoughtAllownce(uint currentAllownace, uint amount) private {
+function _checkHaveEnoughtAllownce(uint currentAllownace, uint amount) private pure{
     
         require(currentAllownace >= amount, "ERC20: insuffienct allowance");
     }
