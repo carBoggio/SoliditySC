@@ -28,8 +28,8 @@ contract ethSend {
 //  Call
 	function sendViaCall(address payable _to) public payable {
 	// Mediante call llamos a data para  
-		{bool memory success; bytes memory data} = _to.call{ value: 1 ehter}{""};
-		emit callStatus(success, data);
+		(bool success, bytes memory data) = _to.call{ value: 1 ether }("");
+		emit CallStatus(success, data);
 		require(success == true, "El envio ha fallado");
 		
 	}

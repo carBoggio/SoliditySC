@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/funAvanzadas.sol": "Food"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/funAvanzadas.sol": {
+			"keccak256": "0xbfee59850a85b711340f603c810f7db51f9356d7876241678a961511fdc2d51c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50be5273f7124497d210d854409d2f7e69b11f74c043a002fc74504dd18aa8a1",
+				"dweb:/ipfs/QmS7MqFayY37TgfsLRXhdKAmwuSLEUomK1amvfXd4uQENq"
+			]
+		}
+	},
+	"version": 1
+}

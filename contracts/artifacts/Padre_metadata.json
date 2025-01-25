@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "factory",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fabricaSmartContracts.sol": "Padre"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fabricaSmartContracts.sol": {
+			"keccak256": "0x3021d5f665f5d888f39d63443aa71264157e64bd02dc696147253eaeb646986e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bbfff1af80cee8c2b54c64ac4a44f40ded466cbcd0f57a1d919239568768780d",
+				"dweb:/ipfs/QmU4KHWGFXUBCoLenhjmZams3n8MLHCZ1aZp61Et5YHSjy"
+			]
+		}
+	},
+	"version": 1
+}
