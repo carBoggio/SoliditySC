@@ -104,8 +104,6 @@ function increaseAllowance(address spender, uint256 addedValue) public virtual r
     return true;
 }
 
-
-
 function decreaseAllowance(address spender, uint256 substractedValue) public virtual returns (bool){
     address owner = msg.sender;
     uint256 currentAllowance = allowance(owner, spender);
